@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Subtraction Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Binary Subtraction</h1>
+            <p>Using 2's Complement</p>
+        </header>
+
+        <div class="calculator">
+            <div class="inputs-container">
+                <div class="input-group">
+                    <label for="inputA">First Binary Number (A)</label>
+                    <input type="text" id="inputA" placeholder="e.g. 1010" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="inputB">Second Binary Number (B)</label>
+                    <input type="text" id="inputB" placeholder="e.g. 0101" autocomplete="off">
+                </div>
+            </div>
+            <button id="calcBtn" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="results" id="resultsPanel" style="display: none;">
+            <h2>Steps & Results</h2>
+            <div class="result-row">
+                <span class="label">Original B:</span>
+                <span id="origB" class="value"></span>
+            </div>
+            <div class="result-row">
+                <span class="label">1's Complement:</span>
+                <span id="onesComp" class="value"></span>
+            </div>
+            <div class="result-row">
+                <span class="label">2's Complement:</span>
+                <span id="twosComp" class="value"></span>
+            </div>
+            <div class="result-row">
+                <span class="label">Addition Result:</span>
+                <span id="addResult" class="value"></span>
+            </div>
+            <div class="result-row">
+                <span class="label">Carry Generated:</span>
+                <span id="carryStatus" class="value"></span>
+            </div>
+            <div class="result-row final">
+                <span class="label">Final Binary Result:</span>
+                <span id="finalResult" class="value"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
