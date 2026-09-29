@@ -211,3 +211,18 @@ button:active {
         align-self: flex-end;
     }
 }
+.student-info {
+    margin-top: 1.25rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: rgba(15, 23, 42, 0.35);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.student-info strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
